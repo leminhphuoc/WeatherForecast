@@ -1,0 +1,19 @@
+﻿@model WeatherForecast.Models.WeatherModel
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Classic Weather Widget </h1>
+<!-- Weather Widget starts here -->
+<div class="w3ls-weather">
+    <div style="width:800px; margin:0 auto;" class="weather1">
+        <h3>TP Ho Chi Minh</h3>
+        <h4>@Model.Temperature °c</h4>
+        <img src="@Model.WeatherIcon" />
+        <h5>@DateTime.Now.ToString("dd/MM/yyyy")</h5>
+        <p>@DateTime.Now.DayOfWeek</p>
+    </div>
+    <div class="clear"></div>
+</div>
+
